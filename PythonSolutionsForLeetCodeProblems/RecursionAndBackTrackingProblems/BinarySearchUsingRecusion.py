@@ -6,12 +6,11 @@ def binarySearch(arr, l, r, ele):
         return mid
     elif ele > arr[mid]:
         return binarySearch(arr, mid + 1, r, ele)
-    elif ele < arr[mid]:
+    else:
         return binarySearch(arr, l, mid, ele)
         
 b = [6, 7, 8, 9, 10]
 
-b = [10, 9, 8, 7, 6]
-print(binarySearch(b, 0, len(b)-1, 10))
+print(binarySearch(b, 0, len(b)-1, 9))
 
 
